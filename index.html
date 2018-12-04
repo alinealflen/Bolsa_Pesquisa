@@ -1,0 +1,268 @@
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+
+		<title>Cadastro de Família</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	
+	<body>
+	
+		<input type="checkbox" id="bt_menu" />
+		<label id="menuLista" for="bt_menu">&#9776;</label>
+		
+		<nav class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Doações</a>
+					<ul>
+						<li><a href="#">Doações Recebidas</a></li>
+						<li><a href="#">Doações Realizadas</a></li>
+						<li><a href="#">Estoque</a></li>
+						<li><a href="#">Relatórios de Doações</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Famílias</a>
+					<ul>
+						<li><a href="#">Cadastrar Família</a></li>
+						<li><a href="#">Buscar Família</a></li>
+						<li><a href="#">Relatório de Famílias</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Sair</a></li>
+			</ul>
+		</nav>
+	
+		
+		<div>
+			<form method="POST" action="">
+				
+				<fieldset > 
+					<legend > <a name="cad1">1.DADOS DE IDENTIFICAÇÃO</a></legend>
+					<label>Nome: </label>
+					<input name="nomeDoFamiliar" type="text" id="inputMaior"/><br>
+					<label>Sexo: </label>
+					<input name="sexoDoFamiliar" type="text"/><br>
+					<label>Data de Nascimento: </label>
+					<input name="nascimentoDoFamiliar" type="text"/><br>
+					<label>Idade: </label>
+					<input name="idadeDoFamiliar" type="text"/><br>
+					<label>Naturalidade: </label>
+					<input name="naturalidadeDoFamiliar" type="text"/><br>
+					<label>Endereço: </label>
+					<input name="enderecoDaFamilia" type="text" id="inputEndereco"/><br>
+					<label>Bairro: </label>
+					<input name="bairroDaFamilia" type="text"/><br>
+					<label>Ponto de Referência: </label>
+					<input name="referenciaDaFamilia" type="text"/>
+					<label>Telefone: </label>
+					<input name="telefoneDaFamilia" type="text"/><br>
+					<label>Celular: </label>
+					<input name="celularDaFamilia" type="text"/><br>
+					<label>Recado: </label>
+					<input name="recadoDaFamilia" type="text"/>
+					<label>Com: </label>
+					<input name="nomeRecadoDaFamilia" type="text" id="inputEndereco"/><br>
+					<label>Escolaridade: </label>
+					<input name="escolaridadeDoFamiliar" type="text"/><br>
+					<label>Estado Civil: </label>
+					<input name="estadoCivilDoFamiliar" type="text"/><br>
+					<label>Filiação: </label>
+					<input name="filiacaoDoFamiliar" type="text"/><br>
+					<label>RG: </label>
+					<input name="rgDoFamiliar" type="text"/><br>
+					<label>CPF: </label>
+					<input name="cpfDoFamiliar" type="text"/>
+					<br />
+					<br />
+					<div id="botao">
+						<a href="#cad2">PRÓXIMO</a>
+					</div>
+				</fieldset>
+					<br />
+					<br />
+					
+					
+				<fieldset> 
+					<legend > <a name="cad2">2.SITUAÇÃO DE TRABALHO</a></legend>
+					<label>Local de Trabalho: </label>
+					<input name="localDeTrabalho" type="text"/><br>
+					<label>Turno: </label>
+					<input name="turnoDoTrabalho" type="text"/><br>
+					<label>Profissão: </label>
+					<input name="profissao" type="text"/><br>
+					<label>Salário Bruto: </label>
+					<input name="salarioBruto" type="text" id="inputValor"/><br>
+					<input name="trabalhoFormal" type="checkbox" value="Trabalho Formal" id="checkbox" />Trabalho Formal
+					<input name="trabalhoInformal" type="checkbox" value="Trabalho Informal" id="checkbox"/>Trabalho Informal
+					<input name="autônomo" type="checkbox" value="Autônomo" id="checkbox"/>Autônomo <br>
+					<input name="desempregado" type="checkbox" value="Desempregado" id="checkbox"/>Desempregado
+					<input name="tempoDesempregado"  type="text" placeholder="Quanto tempo?"/><br>
+					<input name="aposentado" type="checkbox" value="aposentado" id="checkbox" />Aposentado
+					<input name="pensionista" type="checkbox" value="pensionista" id="checkbox"/>Pensionista<br>
+					<input name="auxilioDoenca" type="checkbox" value="auxilioDoenca" id="checkbox"/>Auxílio Doença
+					<input name="profissao" type="text" placeholder="R$..." id="inputValor"/><br>
+					<input name="auxilioMaternidade" type="checkbox" value="auxilioMaternidade" id="checkbox"/>Auxílio Maternidade
+					<input name="valorMaternidade" type="text" placeholder="R$..." id="inputValor"/>
+					<input name="parcelasMaternidade" type="text"placeholder="Parcelas a receber..."/><br>
+					<input name="auxilioReclusao" type="checkbox" value="auxilioReclusao" id="checkbox"/>Auxílio Reclusão
+					<input name="valorReclusao" type="text" placeholder="R$..." id="inputValor"/><br>
+					<input name="bpc" type="checkbox" value="bpc" id="checkbox"/>BPC 
+					<input name="valorBpc" type="text" placeholder="R$..." id="inputValor"/><br>
+					<input name="seguroDesemprego" type="checkbox" value="seguroDesemprego" id="checkbox"/>Seguro Desemprego
+					<input name="valorSeguroDesemprego" type="text" placeholder="R$..." id="inputValor"/>
+					<input name="parcelasSeguroDesemprego" type="text"placeholder="Parcelas a receber..."/><br>
+					<input name="pensao" type="checkbox" value="pensao" id="checkbox"/>Pensão Filhos e/ou Netos
+					<input name="valorPensao" type="text" placeholder="R$..." id="inputValor"/><br>
+					<label>Outros Rendimentos</label>
+					<input name="outrosRendimentos" type="text">
+					<br />
+					<br />
+					<div id="botao">
+						<a href="#cad3">PRÓXIMO</a>
+					</div>
+					<div id="botao">
+						<a href="#cad1">VOLTAR</a>
+					</div>
+				</fieldset>
+				<br />
+				<br />
+				
+				<fieldset> 
+					<legend><a name="cad3"> 3.SITUAÇÃO HABITACIONAL</a></legend>
+					<label>Tempo de Residência no município: </label><br>
+					<input name="propriaQuitada" type="checkbox" value="propriaQuitada" id="checkbox"/>Própria Quitada
+					<input name="cedida" type="checkbox" value="cedida" id="checkbox"/>Cedida 
+					<input name="resideComParentes" type="checkbox" value="resideComParentes" id="checkbox"/>Reside com Parentes<br>
+					<input name="propriaFinanciada" type="checkbox" value="propriaFinanciada" id="checkbox"/>Própria Financiada <label> Parcelas Restantes </label> <input name="parcelasRestantes" type="text" /><br>
+					<input name="alugada" type="checkbox" value="alugada" id="checkbox"/>Alugada <label> R$ </label> <input name="valorAluguel" type="text" id="inputValor"/><br><br>
+					<label>Localização: </label>
+					<input name="urbana" type="checkbox" value="urbana" id="checkbox"/>Urbana
+					<input name="rural" type="checkbox" value="rural" id="checkbox"/>Rural<br><br>
+					<label>Número de Famílias na Residência: </label>
+					<input name="umaFamilia" type="checkbox" value="umaFamilia" id="checkbox"/>Uma 
+					<input name="duasFamilias" type="checkbox" value="duasFamilias" id="checkbox" />Duas	
+					<input name="tresFamilias" type="checkbox" value="tresFamilias" id="checkbox"/>Três ou mais<br><br>
+					<label>Banheiro: </label>
+					<input name="umBanheiro" type="checkbox" value="umBanheiro" id="checkbox"/>Um 
+					<input name="doisBanheiro" type="checkbox" value="doisBanheiro" id="checkbox"/>Dois <br><br>
+					<label>Escoamento Sanitário: </label>
+					<input name="redePublica" type="checkbox" value="redePublica" id="checkbox"/>Rede Pública
+					<input name="fossaSeptica" type="checkbox" value="fossaSeptica" id="checkbox"/>Fossa Séptica
+					<input name="vala" type="checkbox" value="vala" id="checkbox"/>Céu aberto/Vala<br><br>
+					<label>Água: </label>
+					<input name="poco" type="checkbox" value="poco" id="checkbox"/>Poço
+					<input name="rede" type="checkbox" value="rede" id="checkbox"/>Rede <label> R$ </label> <input name="valorAgua" type="text" id="inputValor"/><br><br>
+					<label>Energia Elétrica: </label>
+					<input name="naoEnergia" type="checkbox" value="naoEnergia" id="checkbox" />Não 
+					<input name="simEnergia" type="checkbox" value="simErnegia" id="checkbox"/>Sim <label> R$ </label> <input name="valorEnergia" type="text" id="inputValor"/><br><br>
+					<label>Gás de Cozinha: </label>
+					<input name="naoGas" type="checkbox" value="naoGas" id="checkbox"/>Não 
+					<input name="simGas" type="checkbox" value="simGas" id="checkbox"/>Sim <label> R$ </label> <input name="valorGas" type="text" id="inputValor"/><br><br>
+					<label>Coleta de Lixo: </label>
+					<input name="simLixo" type="checkbox" value="simLixo" id="checkbox"/>Sim 
+					<input name="naoLixo" type="checkbox" value="naoLixo" id="checkbox"/>Não <br><br>
+					<label>Pavimentação da Rua: </label>
+					<input name="simPavimentacao" type="checkbox" value="simPavimentacao" id="checkbox"/>Sim 
+					<input name="naoPavimentacao" type="checkbox" value="naoPavimentacao" id="checkbox"/>Não 
+					<br />
+					<br />
+					<div id="botao">
+						<a href="#cad4">PRÓXIMO</a>
+					</div>
+					<div id="botao">
+						<a href="#cad2">VOLTAR</a>
+					</div>
+				</fieldset>
+				<br />
+				<br />
+				<fieldset>
+					<legend> <a name="cad4"> 4.BOLSA FAMÍLIA</a> </legend>
+					<label> Tem cadastro no PBF:</label>
+					<input name="simPbf" type="checkbox" value="simPbf" id="checkbox"/>Sim 
+					<input name="naoPbf" type="checkbox" value="naoPbf" id="checkbox"/>Não<br><br>
+					<label> Recebe PBF:</label>
+					<input name="naoRecebePbf" type="checkbox" value="naoRecebePbf" id="checkbox"/>Não
+					<input name="simRecebePbf" type="checkbox" value="simRecebePbf" id="checkbox"/>Sim <label> R$ </label> <input name="valorPbf" type="text" id="inputValor"/><br><br>
+					<label> Inclusão em Projetos Sociais:</label>
+					<input name="naoProjetosSociais" type="checkbox" value="naoProjetosSociais" id="checkbox"/>Não	
+					<input name="simProjetosSociais" type="checkbox" value="simProjetosSociais" id="checkbox"/>Sim <label> Qual: </label> <input name="nomeProjeto" type="text" /><br><br>					
+					<br />
+					<br />
+					<div id="botao">
+						<a href="#cad5">PRÓXIMO</a>
+					</div>
+					<div id="botao">
+						<a href="#cad3">VOLTAR</a>
+					</div>
+				</fieldset>
+				<br />
+				<br />
+				<fieldset>
+					<legend><a name="cad5"> 5.SITUAÇÃO DE SAÚDE </a> </legend>
+					<label>Domícilio coberto por:</label><br>
+					<input name="agenteDeSaude" type="checkbox" value="agenteDeSaude" id="checkbox"/>Programa de Agentes Comunitários de Saúde
+					<input name="programaDeSaude" type="checkbox" value="programaDeSaude" id="checkbox"/>Programa de Saúde da Família<br><br>
+					<label>Pessoas com deficiências na família:</label>	<br>
+					<input name="naoDeficiencia" type="checkbox" value="naoDeficiencia" id="checkbox"/>Não	
+					<input name="simDeficiencia" type="checkbox" value="simDeficiencia" id="checkbox"/>Sim <label> Quantas: </label> <input name="pessoasComDeficiencias" type="text" /><br><br>
+					<label>Congênita</label>
+					<input type="checkbox" name="simCongenita" value="simCongenita" id="checkbox"/>Sim
+					<input type="checkbox" name="naoCongenita" value="naoCongenita" id="checkbox"/>Não<br><br>
+					<label>Tipo de deficiência:</label><br>
+					<input type="checkbox" name="cegueira" value="cegueira" id="checkbox"/>Cegueira
+					<input type="checkbox" name="mudez" value="mudez" id="checkbox"/>Mudez
+					<input type="checkbox" name="surdez" value="surdez" id="checkbox"/>Surdez
+					<input type="checkbox" name="mental" value="mental" id="checkbox"/>Mental
+					<input type="checkbox" name="fisica" value="fisica" id="checkbox"/>Física<br><br>
+					<label>Recebe atendimento especial:</label>
+					<input type="checkbox" name="naoAtendimento" value="naoAtendimento" id="checkbox"/>Não
+					<input type="checkbox" name="simAtendimento" value="simAtendimento" id="checkbox"/>Sim <label>Qual: </label><input type="text" name="atendimentoEspecial"/><br><br>
+					<label>Gestante:</label>
+					<input type="checkbox" name="naoGestante" value="naoGestante" id="checkbox"/>Não
+					<input type="checkbox" name="simGestante" value="simGestante" id="checkbox"/>Sim <label>Idade Gestacional: </label><input type="text" name="idadeGestacional"/><br><br>
+					<label>Pré-Natal</label>
+					<input type="checkbox" name="simPreNatal" value="simPreNatal" id="checkbox"/>Sim 
+					<input type="checkbox" name="naoPreNatal" value="naoPreNatal" id="checkbox"/>Não<br><br>
+					<label>Nutriz</label>
+					<input type="checkbox" name="simNutriz" value="simNutriz" id="checkbox"/>Sim 
+					<input type="checkbox" name="naoNutriz" value="naoNutriz" id="checkbox"/>Não<br><br>
+					<label>Utiliza método anticoncepcional:</label>
+					<input type="checkbox" name="naoAnticoncepcional" value="naoAnticoncepcional" id="checkbox"/>Não
+					<input type="checkbox" name="simAnticoncepcional" value="simAnticoncepcional" id="checkbox"/>Sim <label>Qual: </label><input type="text" name="anticoncepcional"/><br><br>
+					<label>Tem conhecimento de outros métodos:</label>
+					<input type="checkbox" name="naoMetodos" value="naoMetodos" id="checkbox"/>Não
+					<input type="checkbox" name="simMetodos" value="simMetodos" id="checkbox"/>Sim <label>Quais: </label><input type="text" name="metodosAnticoncepcionais"/><br><br>
+					<label>Planejamento Familiar</label>
+					<input type="checkbox" name="laqueadura" value="laqueadura" id="checkbox"/>Laqueadura 
+					<input type="checkbox" name="vasectomia" value="vasectomia" id="checkbox"/>Vasectomia<br><br>
+					<label>Pessoas idosas na família:</label>
+					<input type="checkbox" name="naoIdoso" value="naoIdoso" id="checkbox"/>Não
+					<input type="checkbox" name="simIdoso" value="simIdoso" id="checkbox"/>Sim <label>Quantos: </label><input type="text" name="quantosIdosos"/><br><br>
+					<label>Situação de doença crônica na família:</label>
+					<input type="checkbox" name="naoDoencaCronica" value="naoDoencaCronica" id="checkbox"/>Não
+					<input type="checkbox" name="simDoencaCronica" value="simDoencaCronica" id="checkbox"/>Sim <label>Qual: </label><input type="text" name="doencaCronica"/><br><br>
+					<label>Utiliza medicamento contínuo:</label>
+					<input type="checkbox" name="naoMedicamento" value="naoMedicamento" id="checkbox"/>Não
+					<input type="checkbox" name="simMedicamento" value="simMedicamento" id="checkbox"/>Sim <label>Gasto mensal R$ </label><input type="text" name="gastoMensal" id="inputValor"/><br><br>
+					<label>Situação de dependência química na família:</label>
+					<input type="checkbox" name="naoDependenciaQuimica" value="naoDependenciaQuimica" id="checkbox"/>Não
+					<input type="checkbox" name="simDependenciaQuimica" value="simDependenciaQuimica" id="checkbox"/>Sim <label>Qual: </label><input type="text" name="depenciaQuimica"/><br><br>
+					<br />
+					<br />
+					<div id="botao">
+						<a href="#cad6">PRÓXIMO</a>
+					</div>
+					<div id="botao">
+						<a href="#cad4">VOLTAR</a>
+					</div>
+				</fieldset>
+			</form>
+		<div>
+		
+	</body>
+</html>
