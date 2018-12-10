@@ -1,0 +1,65 @@
+<html>
+<head>
+
+		<meta charset="UTF-8">
+
+		<title>Cadastro de Doações Recebidas</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+	</head>
+	
+	<body>
+	
+		<input type="checkbox" id="bt_menu" />
+		<label id="menuLista" for="bt_menu">&#9776;</label>
+		
+		<nav class="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Doações</a>
+					<ul>
+						<li><a href="#">Doações Recebidas</a></li>
+						<li><a href="#">Doações Realizadas</a></li>
+						<li><a href="#">Estoque</a></li>
+						<li><a href="#">Relatórios de Doações</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Famílias</a>
+					<ul>
+						<li><a href="#">Cadastrar Família</a></li>
+						<li><a href="#">Buscar Família</a></li>
+						<li><a href="#">Relatório de Famílias</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Sair</a></li>
+			</ul>
+		</nav>
+		<h2>Cadastro de Doação Recebida</h2>
+		
+		<div>
+			<form method="POST" action="">
+				<fieldset>
+				<label>Doação de: </label><br />
+				<input name="roupa" type="checkbox" value="Roupa" id="checkbox" />Roupa 
+				<input name="comida" type="checkbox" value="Comida" id="checkbox" />Comida
+				<input name="diversos" type="checkbox" value="Diversos" id="checkbox" />Diversos <br />
+				<label>Descrição: </label><br />
+				<input type="text" name="descricao" /> <br />
+				<label>Categoria: </label><br />
+				<input name="adulto" type="checkbox" value="Adulto" id="checkbox" />Adulto 
+				<input name="juvenil" type="checkbox" value="Juvenil" id="checkbox" />Juvenil
+				<input name="infantil" type="checkbox" value="Infantil" id="checkbox" />Infantil <br />
+				<label> Data da doação: </label><br />
+				<input type="date" name="dataDoacao" />
+				<br />
+				<br />
+				<div id="botao">
+					<a href="#php">Salvar</a>
+				</div>
+				</fieldset>
+			</form>
+		</div>
+		
+</html>
